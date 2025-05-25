@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 1rem;
+  background: #f0f4f8;
+  color: #333;
+}
+
+header {
+  background: #0077cc;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.task-input,
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input[type='text'] {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+#task-list li {
+  background: white;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.task-complete {
+  text-decoration: line-through;
+  color: gray;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: none;
+  background: #333;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .task-input,
+  .search-bar {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
